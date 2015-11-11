@@ -1,29 +1,21 @@
 package com.erikle2.childmanagement.utils;
 
-import com.erikle2.childmanagement.views.ILoginView;
+import com.erikle2.childmanagement.login.views.ITalkToLoginActivity;
 
 /**
  * Created by Erik on 04/11/2015.
  */
 public class LoginValidator {
-    public static boolean validateCredentials(String email, String password, ILoginView iLoginView){
+    public static boolean validateCredentials(String email, String password, ITalkToLoginActivity iTalkToLoginActivity){
         boolean valid = true;
         if (email.isEmpty() || !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            iLoginView.invalidEmail();
-//            _emailText.setError("enter a valid email address");
+            iTalkToLoginActivity.invalidEmail();
             valid = false;
-        } else {
-//            _emailText.setError(null);
         }
-
         if (password.isEmpty() || password.length() < 4 || password.length() > 10) {
-//            _passwordText.setError("between 4 and 10 alphanumeric characters");
             valid = false;
-            iLoginView.invalidPassword();
-        } else {
-//            _passwordText.setError(null);
+            iTalkToLoginActivity.invalidPassword();
         }
-
         return valid;
     }
 }
