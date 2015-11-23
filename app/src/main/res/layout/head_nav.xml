@@ -9,10 +9,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TextView
-            android:id="@+id/head_title"
+            android:id="@+id/head_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="JOHN DOE"

@@ -4,15 +4,16 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/row_icon"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:src="@android:drawable/radiobutton_off_background"
         android:paddingLeft="16dp"/>
 
     <TextView
+        android:id="@+id/row_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dummytext
-        "/>
+        android:text="dummytext"/>
 
 </LinearLayout>

@@ -3,4 +3,6 @@
     <string name="title_activity_main">Fuck</string>
     <string name="action_settings">settings</string>
     <string name="hello">hello world</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
 </resources>
